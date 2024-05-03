@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Check if the RU locale is present in environment
-if grep -q "XKB_DEFAULT_LAYOUT" /etc/environment; then
+# Check if changing the keyboard layout is present in environment
+if grep -q "XKB_DEFAULT_LAYOUT=ru,en" /etc/environment; then
   # Delete old Environment
   echo "Delete old Environment..."  
   sleep 1
@@ -21,7 +21,7 @@ echo "Reboot!"
 shutdown now -r  
 
 else
-  # RU locale has already been deleted
-  echo "RU locale has already been deleted..."
+  # Changing the keyboard layout has already been deleted
+  echo "Changing the keyboard layoute has already been deleted..."
   sleep 3
 fi
