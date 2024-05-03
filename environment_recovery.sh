@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check if changing the keyboard layout is present in environment
-if grep -q "XKB_DEFAULT_LAYOUT=ru,en" /etc/environment; then
+if grep -q "XKB_DEFAULT_LAYOUT" /etc/environment; then
   # Delete old Environment
   echo "Delete old Environment..."  
   sleep 1
