@@ -5,21 +5,21 @@
 
 ## Добавление смены раскладки физ. клавиатуры
 ### Смена через lctrl+lshift
-### Установка
+#### Установка
 1. Тапнуть правой кнопкой на [Changing_the_keyboard_layout_ctrl.desktop](https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/Changing_the_keyboard_layout_ctrl.desktop) 
 2. Сохранить через `Save as` (`Сохранить ссылку как`) на рабочем столе
 
-### Запуск
+#### Запуск
 1. Тапнуть два раза на файл `Changing_the_keyboard_layout_ctrl`
 2. Ввести `sudo` пароль во всплывшем окне
 3. Дождаться перезагрузки Steam Deck
 
 ### Смена через lalt+lshift
-### Установка
+#### Установка
 1. Тапнуть правой кнопкой на [Changing_the_keyboard_layout_alt.desktop](https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/Changing_the_keyboard_layout_alt.desktop) 
 2. Сохранить через `Save as` (`Сохранить ссылку как`) на рабочем столе
 
-### Запуск
+#### Запуск
 1. Тапнуть два раза на файл `Changing_the_keyboard_layout_alt`
 2. Ввести `sudo` пароль во всплывшем окне
 3. Дождаться перезагрузки Steam Deck
