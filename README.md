@@ -27,7 +27,7 @@
 ## Восстановление исходного файла
 Восстанавливает файл `environment` из bak файла.Удаляет старую версию файла.
 ### Установка
-1. Тапнуть правой кнопкой на [environment_recovery.desktop](https://raw.githubusercontent.com/mashakulina/ru_locale_fix_on_steamdeck/main/environment_recovery.desktop) 
+1. Тапнуть правой кнопкой на [environment_recovery.desktop](https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/environment_recovery.desktop) 
 2. Сохранить через `Save as` (`Сохранить ссылку как`) на рабочем столе
 
 ### Запуск
