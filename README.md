@@ -6,7 +6,7 @@
 1. Тапнуть правой кнопкой на [ChangingTheKeyboardLayout.desktop](https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/ChangingTheKeyboardLayout.desktop) 
 2. Сохранить через `Save as` (`Сохранить ссылку как`) на рабочем столе
 
-#### Запуск
+### Запуск
 1. Тапнуть два раза на файл `ChangingTheKeyboardLayout.desktop` на рабочем столе
 2. Ввести `sudo` пароль во всплывшем окне
 3. Выбрать вариант смены раскладки
