@@ -1,7 +1,7 @@
 #!/usr/bin/env xdg-open
 [Desktop Entry]
-Name=Changing the keyboard layout
-Comment=Prescribes changing the keyboard layout (lalt+lshift) in the environment and reboots the system
-Exec=curl https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/environment_update_alt.sh | pkexec bash -s --
+Name=Changing the keyboard layout on Steam Deck
+Comment=Prescribes a change of keyboard layout in the environment and reboots the system
+Exec=sh -c 'rm -f /tmp/ChangingTheKeyboardLayout.sh; if curl -S -s -L -O --output-dir /tmp/ --connect-timeout 60 https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/ChangingTheKeyboardLayout.sh; then bash /tmp/ChangingTheKeyboardLayout.sh; else echo "Something went wrong, please report this if it is a bug"; read; fi'
 Terminal=true
 Type=Application
