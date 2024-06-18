@@ -36,7 +36,7 @@ if grep -q "XKB_DEFAULT_LAYOUT" /etc/environment ; then
     TRUE "Recovery system file" \
     )
 else
-    OPTION=$(zen_nospam --title="Adding a layout change" --width=350 --height=350 --list --radiolist --text "Select your language:" --hide-header --column "Buttons" --column "Choice"\
+    OPTION=$(zen_nospam --title="Adding a layout change" --width=350 --height=250 --list --radiolist --text "Select your language:" --hide-header --column "Buttons" --column "Choice"\
     TRUE "Russian" \
     FALSE "German" \
     FALSE "French" \
@@ -58,6 +58,9 @@ if [ "$OPTION" == "Recovery system file" ] ; then
     OPTION=$(zen_nospam --title="Adding a layout change" --width=350 --height=100 --list --radiolist --text "Reboot system:" --hide-header --column "Buttons" --column "Choice"\
     TRUE "Reboot now" \
     FALSE "Reboot later")
+    if [[ $? -eq 1 ]] || [[ $? -eq 5 ]]; then
+    exit 1
+    fi
 
     # Reboot later
     if [ "$OPTION" == "Reboot later" ]; then
@@ -77,7 +80,7 @@ if [[ "$OPTION" == "Russian" ]]; then
   sudo cp /etc/environment /etc/environment.bak
 
   # Select layout
-OPTION=$(zen_nospam --title="Layout switching option" --width=350 --height=350 --list --radiolist --text "Select the option to switch the layout:" --hide-header --column "Buttons" --column "Choice"\
+OPTION=$(zen_nospam --title="Layout switching option" --width=350 --height=100 --list --radiolist --text "Select the option to switch the layout:" --hide-header --column "Buttons" --column "Choice"\
     TRUE "shift+ctrl" \
     FALSE "shift+alt" \
     )
