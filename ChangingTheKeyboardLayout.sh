@@ -58,9 +58,6 @@ if [ "$OPTION" == "Recovery system file" ] ; then
     OPTION=$(zen_nospam --title="Adding a layout change" --width=350 --height=100 --list --radiolist --text "Reboot system:" --hide-header --column "Buttons" --column "Choice"\
     TRUE "Reboot now" \
     FALSE "Reboot later")
-    if [[ $? -eq 1 ]] || [[ $? -eq 5 ]]; then
-    exit 1
-    fi
 
     # Reboot later
     if [ "$OPTION" == "Reboot later" ]; then
