@@ -1,7 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Name=Environment recovery
-Comment=Recovery the environment and reboots the system
-Exec=curl https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/environment_recovery.sh | pkexec bash -s --
-Terminal=true
-Type=Application
