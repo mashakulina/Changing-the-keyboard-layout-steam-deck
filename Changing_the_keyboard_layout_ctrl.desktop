@@ -1,7 +1,0 @@
-#!/usr/bin/env xdg-open
-[Desktop Entry]
-Name=Changing the keyboard layout
-Comment=Prescribes changing the keyboard layout (lctrl+lshift) in the environment and reboots the system
-Exec=curl https://raw.githubusercontent.com/mashakulina/Changing-the-keyboard-layout-steam-deck/main/environment_update_ctrl.sh | pkexec bash -s --
-Terminal=true
-Type=Application
